@@ -1,0 +1,6 @@
+<form>
+  <input type="text" #input>
+  <input type="button" name="button" (click)="searchtest(input)" value="search">
+</form>
+<!-- <img *ngFor='let g of search$ , let i = index' src="{{ search$[i].images.preview_gif.url}}" alt="{{ search$[i].title}}"> -->
+<img *ngFor='let g of giphy$ , let i = index' src="{{ giphy$[i].images.preview_gif.url}}" alt="{{ giphy$[i].title}}">

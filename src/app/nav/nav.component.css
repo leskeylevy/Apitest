@@ -1,0 +1,12 @@
+.btn{
+  background-color: blue;
+  color: white;
+}
+.nav-link {
+text-decoration: none;
+padding: 25px;
+color: white;
+}
+.nav{
+  text-align: center;
+}

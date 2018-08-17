@@ -1,0 +1,15 @@
+<nav class="nav">
+  <a class="nav-link active" href="#">GIPHY</a>
+  <a class="nav-link" href="#">Reactions</a>
+  <a class="nav-link" href="#">Entertainment</a>
+  <a class="nav-link" href="#">Sports</a>
+  <a class="nav-link" href="#">Stickers</a>
+  <a class="nav-link" href="#">Artists</a>
+  <a class="nav-link" href="#">...</a>
+  <button class="btn" name="button">UPLOAD</button>
+  <button class="btn" name="button">CREATE</button>
+</nav>
+<app-search></app-search>
+<p>
+  <img *ngFor='let g of giphy$ , let i = index' src="{{ giphy$[i].images.preview_gif.url}}" alt="{{ giphy$[i].title}}">
+</p>
