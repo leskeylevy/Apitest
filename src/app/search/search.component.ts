@@ -15,7 +15,7 @@ export class SearchComponent implements OnInit {
     this.http.get('https://api.giphy.com/v1/gifs/search?api_key=L90U1G5LoZogv9uUK14zpVVtNyaV8XKj&limit=150&offset=0&rating=R&lang=en&q=' + input.value).subscribe(
       result => {
         this.NavComponent.giphy$ = result.data;
-        console.log(result.data);
+        // console.log(result.data);
       }
 
     )
